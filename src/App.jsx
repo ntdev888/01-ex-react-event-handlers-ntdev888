@@ -4,6 +4,11 @@ import FilterBy from "./components/FilterBy";
 import SortBy from "./components/SortBy";
 import Products from "./components/Products";
 
+const setFilterBy = (filterBy) => {
+  alert(`Filter by: ${filterBy}`);
+  console.log(filterBy);
+};
+
 const App = () => {
   const products = getProducts();
 
@@ -11,7 +16,7 @@ const App = () => {
     <div className="container">
       <h1>Sunglass Shop</h1>
       <div className="toolbar">
-        <FilterBy />
+        <FilterBy setFilterBy={setFilterBy} />
         <SortBy />
       </div>
       <Products products={products} />
