@@ -9,6 +9,12 @@ const setFilterBy = (filterBy) => {
   console.log(filterBy);
 };
 
+const sortBy = (sortBy) => {
+  alert(`Sort by: ${sortBy}`);
+  console.log(sortBy);
+  console.log(sortBy);
+};
+
 const App = () => {
   const products = getProducts();
 
@@ -17,7 +23,7 @@ const App = () => {
       <h1>Sunglass Shop</h1>
       <div className="toolbar">
         <FilterBy setFilterBy={setFilterBy} />
-        <SortBy />
+        <SortBy sortBy={sortBy} />
       </div>
       <Products products={products} />
     </div>
