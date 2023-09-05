@@ -12,7 +12,6 @@ const setFilterBy = (filterBy) => {
 const sortBy = (sortBy) => {
   alert(`Sort by: ${sortBy}`);
   console.log(sortBy);
-  console.log(sortBy);
 };
 
 const App = () => {
